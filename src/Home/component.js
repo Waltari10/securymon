@@ -5,7 +5,6 @@ import Typography from '@material-ui/core/Typography';
 import Card from '../components/Card';
 
 const useStyles = makeStyles((theme) => {
-  console.log(theme);
 
   return ({
     card: {
@@ -44,7 +43,7 @@ const Home = () => {
         className={classes.subheader}
         align="center"
         variant="h5"
-        dangerouslySetInnerHTML={{ __html: 'Securymon is designed to teach the basics of internet security awareness. <br> Start playing and learning today!'}}
+        dangerouslySetInnerHTML={{ __html: 'Securymon is designed to teach the basics of internet security awareness. <br> Start playing and learning today!' }}
       >
       </Typography>
       <Card

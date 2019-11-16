@@ -64,9 +64,7 @@ export default function SimpleTabs() {
   const classes = useStyles();
   const [value, setValue] = React.useState(getActiveIndex());
 
-  console.log(value);
   const handleChange = (event, newValue) => {
-    console.log(newValue);
     setValue(newValue);
   };
   return (
