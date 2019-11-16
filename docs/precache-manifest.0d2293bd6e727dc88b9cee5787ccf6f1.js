@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "820d802cb5238ae12aef09ba368365d9",
+    "revision": "5ed87480ea75839c601fd377e9051ae9",
     "url": "./index.html"
   },
   {
-    "revision": "2f989f9e063b0eb54980",
+    "revision": "46a57c54c607d8df83b2",
     "url": "./static/css/main.934b7402.chunk.css"
   },
   {
-    "revision": "cdb4f14e05d413f2a565",
-    "url": "./static/js/2.d491b341.chunk.js"
+    "revision": "fa4d0ddfc11b9f5b8976",
+    "url": "./static/js/2.27fd414c.chunk.js"
   },
   {
-    "revision": "2f989f9e063b0eb54980",
-    "url": "./static/js/main.937a5a6b.chunk.js"
+    "revision": "46a57c54c607d8df83b2",
+    "url": "./static/js/main.46a99929.chunk.js"
   },
   {
     "revision": "357ce23fca03be8cd818",
@@ -34,5 +34,9 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "73ca1d63c96bcfa7cd5c131e20c596f8",
     "url": "./static/media/Morl-Regular.73ca1d63.otf"
+  },
+  {
+    "revision": "4a707eb8346ace76e789e0652d829920",
+    "url": "./static/media/board.4a707eb8.png"
   }
 ]);
