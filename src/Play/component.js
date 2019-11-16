@@ -62,7 +62,7 @@ const Play = () => {
           href="https://drive.google.com/open?id=1pXMiUmd4nnxwQ-SI6Pv4zFsE-JcOGCX-"
           target="_blank"
           variant="contained"
-        >Download Securemon</Button>
+        >Download Securymon</Button>
       </div>
       <Typography className={classes.header} variant="h4">Free add-ons</Typography>
       <Typography className={classes.text}>In the future we will release additional card packs on this page that can be printed out and added to the game to improve it and keep it updated.
