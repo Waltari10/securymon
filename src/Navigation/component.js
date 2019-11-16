@@ -42,6 +42,9 @@ const useStyles = makeStyles(theme => ({
     left: theme.spacing(2),
     top: theme.spacing(2),
     width: '160px',
+    [theme.breakpoints.down('xs')]: {
+      width: '120px',
+    },
   },
   tabs: {
     justifyContent: 'flex-end',
