@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.4a95bed0.chunk.css",
+    "main.js": "/static/js/main.39f49608.chunk.js",
+    "main.js.map": "/static/js/main.39f49608.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.a16e6991.js",
+    "runtime-main.js.map": "/static/js/runtime-main.a16e6991.js.map",
+    "static/js/2.20cd7c00.chunk.js": "/static/js/2.20cd7c00.chunk.js",
+    "static/js/2.20cd7c00.chunk.js.map": "/static/js/2.20cd7c00.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.21fafd0661528e9457c3d8a81e9998a5.js": "/precache-manifest.21fafd0661528e9457c3d8a81e9998a5.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.4a95bed0.chunk.css.map": "/static/css/main.4a95bed0.chunk.css.map",
+    "static/media/Answer1.png": "/static/media/Answer1.2109129a.png",
+    "static/media/Card1.png": "/static/media/Card1.71981406.png",
+    "static/media/index.css": "/static/media/Morl-Regular.73ca1d63.otf"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a16e6991.js",
+    "static/js/2.20cd7c00.chunk.js",
+    "static/css/main.4a95bed0.chunk.css",
+    "static/js/main.39f49608.chunk.js"
+  ]
+}
