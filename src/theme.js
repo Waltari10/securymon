@@ -30,9 +30,11 @@ export default createMuiTheme({
     },
     h5: {
       fontFamily: 'Morl',
+      color: '#775BE4',
     },
     h6: {
       fontFamily: 'Morl',
+      color: '#775BE4',
     },
     button: {
       fontFamily: 'Montserrat',
