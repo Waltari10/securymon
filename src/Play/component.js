@@ -10,7 +10,7 @@ const useStyles = makeStyles((theme) => ({
     marginTop: theme.spacing(2),
   },
   header: {
-    marginTop: theme.spacing(2),
+    marginTop: theme.spacing(7),
   },
   container: {
     marginLeft: theme.spacing(1),
@@ -43,7 +43,7 @@ const Play = () => {
       <Typography className={classes.header} variant="h4">Get the game</Typography>
 
       <Typography className={classes.text}>
-        You can download and print free version of the game here (link   here). You just need to have your own game pieces and dice before you can start playing.
+        You can download and print free version of the game <a href="https://drive.google.com/open?id=1pXMiUmd4nnxwQ-SI6Pv4zFsE-JcOGCX-" target="_blank">here</a>. You just need to have your own game pieces and dice before you can start playing.
 
         You can also purchase a physical better quality version of the game that includes also the game pieces and dices from well stocked board game and mobile phone stores.
       </Typography>

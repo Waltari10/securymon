@@ -5,6 +5,8 @@ import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import { Route, Link } from 'react-router-dom';
 
+
+import logo from '../assets/logo_long.png';
 import Home from '../Home';
 import Play from '../Play';
 import Databank from '../Databank';
@@ -32,6 +34,15 @@ const useStyles = makeStyles(theme => ({
   contentContainer: {
     maxWidth: '800px',
     margin: '0 auto',
+  },
+  logo: {
+    position: 'absolute',
+    left: theme.spacing(2),
+    top: theme.spacing(2),
+    width: '160px',
+  },
+  tabs: {
+    justifyContent: 'flex-end',
   },
 }));
 
@@ -65,11 +76,14 @@ export default function SimpleTabs() {
         }}
         position="static"
       >
+        <img src={logo} className={classes.logo} />
         <Tabs
           classes={{
+            flexContainer: classes.tabs,
             indicator: classes.indicator,
           }}
           style={{
+            justifyContent: 'flex-end',
             backgroundColor: 'transparent',
           }}
           value={value}

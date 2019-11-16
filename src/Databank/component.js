@@ -11,9 +11,12 @@ import phishingBread from './Phishing';
 
 import Page from './Page';
 
-const useStyles = makeStyles(() => ({
+const useStyles = makeStyles((theme) => ({
   button: {
     fontSize: '1rem',
+  },
+  container: {
+    marginTop: theme.spacing(7),
   },
 }));
 
@@ -104,7 +107,9 @@ const Databank = () => {
   const classes = useStyles();
 
   return (
-    <div>
+    <div
+      className={classes.container}
+    >
       {
         contentArr.map((obj, i) => (
           <div

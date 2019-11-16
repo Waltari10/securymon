@@ -12,19 +12,23 @@ const useStyles = makeStyles(() => ({
   cardFront: {
     width: cardWidth,
     borderRadius: '5px',
+    zIndex: 1,
   },
   cardBack: {
     width: cardWidth,
     borderRadius: '5px',
+    zIndex: 1,
   },
   cardInner: {
     width: '100%',
     height: '100%',
     borderRadius: '5px',
-    boxShadow: '0px 35px 29px -15px rgba(21,21,21,1)',
+    boxShadow: '0px 71px 36px -50px rgba(0,0,0,0.19)',
+    zIndex: 1,
   },
   container: {
     borderRadius: '5px',
+    zIndex: 1,
   },
 }));
 

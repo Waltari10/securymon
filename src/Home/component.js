@@ -12,14 +12,14 @@ const useStyles = makeStyles((theme) => {
       marginBottom: theme.spacing(8),
       maxWidth: '500px',
       width: '50%',
-      marginTop: theme.spacing(4),
+      marginTop: theme.spacing(12),
       margin: '0 auto',
     },
     header: {
-      marginTop: theme.spacing(8),
+      marginTop: '25%',
     },
     subheader: {
-      marginTop: theme.spacing(2),
+      marginTop: theme.spacing(3),
     },
   });
 });
