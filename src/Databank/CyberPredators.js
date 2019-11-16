@@ -6,4 +6,4 @@ Chat rooms, instant messaging, Internet forums, social networking sites, cell ph
 
 Even though it is the mainstream view that predators will use distinct tactics to meet victims, most actual in-person meetings do not involve any deception. In fact, the minors are usually complicit with perpetrators often using promises of love and romance to seduce victims to meet.<br><br>
 
-Source: https://en.wikipedia.org/wiki/Online_predator`;
+Source: <a target="_blank" href="https://en.wikipedia.org/wiki/Online_predator">https://en.wikipedia.org/wiki/Online_predator</a>`;

@@ -9,4 +9,4 @@ Internet trolling is a common form of bullying over the Internet in an online co
 
 Not all negative interaction online or on social media can be attributed to cyberbullying. Research suggests that there are also interactions online that result in peer pressure, which can have a negative, positive, or neutral impact on those involved.<br><br>
 
-Source: https://en.wikipedia.org/wiki/Cyberbullying`;
+Source: <a target="blank" href="https://en.wikipedia.org/wiki/Cyberbullying">https://en.wikipedia.org/wiki/Cyberbullying</a>`;

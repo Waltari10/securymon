@@ -37,7 +37,7 @@ const Home = () => {
         align="center"
         variant="h4"
       >
-        Securymon is an educational and fun board game for families and children.
+        Securymon is an educational and fun board game for families and children
       </Typography>
 
       <Typography
@@ -45,7 +45,7 @@ const Home = () => {
         align="center"
         variant="h6"
       >
-        It’s designed to teach the players the basics of internet security awareness. Start playing and learning today!
+        It’s designed to teach the basics of internet security awareness. Start playing and learning today!
       </Typography>
       <Card
         className={classes.card}

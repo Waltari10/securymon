@@ -5,7 +5,7 @@ import Typography from '@material-ui/core/Typography';
 const useStyles = makeStyles((theme) => ({
 
   header: {
-    marginTop: theme.spacing(2),
+    marginTop: theme.spacing(4),
   },
   bread: {
     marginTop: theme.spacing(2),
@@ -19,15 +19,16 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 
-const Page = ({ title, bread }) => {
+const Page = ({ title, bread, id }) => {
 
   const classes = useStyles();
 
   return (
     <div
+      id={id}
       className={classes.container}
     >
-      <Typography className={classes.header} variant="h5">
+      <Typography className={classes.header} variant="h4">
         {title}
       </Typography>
       <Typography
