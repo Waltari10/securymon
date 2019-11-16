@@ -28,7 +28,6 @@ const Home = () => {
 
   const classes = useStyles();
 
-
   return (
     <div>
       <Typography
@@ -38,12 +37,13 @@ const Home = () => {
       >
         Cyber security has never been so fun
       </Typography>
-
       <Typography
         className={classes.subheader}
         align="center"
         variant="h5"
-        dangerouslySetInnerHTML={{ __html: 'Securymon is designed to teach the basics of internet security awareness. <br> Start playing and learning today!' }}
+        dangerouslySetInnerHTML={{
+          __html: 'Securymon is designed to teach the basics of internet security awareness. <br> Start playing and learning today!',
+        }}
       >
       </Typography>
       <Card

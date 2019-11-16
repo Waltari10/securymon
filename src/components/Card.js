@@ -73,7 +73,7 @@ const Card = ({ className }) => {
             onClick={() => {
               setTimeout(() => {
                 setFlipped(!isFlipped);
-              }, 10);
+              }, 50);
               setIsRight(true);
             }}
             style={{
@@ -83,9 +83,7 @@ const Card = ({ className }) => {
               bottom: '1.5%',
               position: 'absolute',
             }}
-          >
-
-          </div>
+          />
           <img
             className={classes.cardInner}
             src={cardFrontImg}
