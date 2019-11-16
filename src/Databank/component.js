@@ -34,38 +34,47 @@ const contentArr = [
   {
     title: 'Sharing private information',
     bread: 'Coming soon!',
+    disabled: true,
   },
   {
     title: 'Troubling content',
     bread: 'Coming soon!',
+    disabled: true,
   },
   {
     title: 'Addiction',
     bread: 'Coming soon!',
+    disabled: true,
   },
   {
     title: 'Viruses and malware',
     bread: 'Coming soon!',
+    disabled: true,
   },
   {
     title: 'Security tools and settings',
     bread: 'Coming soon!',
+    disabled: true,
   },
   {
     title: 'Ramsomware',
     bread: 'Coming soon!',
+    disabled: true,
   },
   {
     title: 'Authentication',
     bread: 'Coming soon!',
+    disabled: true,
   },
   {
     title: 'Fake information',
     bread: 'Coming soon!',
+    disabled: true,
   },
   {
     title: 'Conversations',
     bread: 'Coming soon!',
+    disabled: true,
   },
 ];
 
@@ -104,6 +113,7 @@ const Databank = () => {
             <Button
               onClick={() => setActiveContentAndScroll(i)}
               className={classes.button}
+              disabled={obj.disabled}
             >
               {obj.title}
             </Button>
