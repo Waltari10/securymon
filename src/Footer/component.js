@@ -2,9 +2,10 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
 
-const useStyles = makeStyles(() => ({
+const useStyles = makeStyles((theme) => ({
 
   container: {
+    marginTop: theme.spacing(10),
     backgroundColor: '#FC8770',
     height: '200px',
   },
