@@ -14,6 +14,7 @@ import Page from './Page';
 const useStyles = makeStyles((theme) => ({
   button: {
     fontSize: '1rem',
+    textTransform: 'none',
   },
   container: {
     marginTop: theme.spacing(7),

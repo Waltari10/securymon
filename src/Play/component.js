@@ -1,6 +1,7 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
+import Button from '@material-ui/core/Button';
 
 import Board from '../assets/board.png';
 
@@ -20,6 +21,10 @@ const useStyles = makeStyles((theme) => ({
     marginTop: theme.spacing(2),
     marginBottom: theme.spacing(2),
     width: '100%',
+  },
+  downloadButton: {
+    marginTop: theme.spacing(4),
+    textTransform: 'none',
   },
 }));
 
@@ -48,6 +53,17 @@ const Play = () => {
         You can also purchase a physical better quality version of the game that includes also the game pieces and dices from well stocked board game and mobile phone stores.
       </Typography>
 
+      <div
+        style={{ width: '100%', textAlign: 'center' }}
+      >
+        <Button
+          className={classes.downloadButton}
+          color="primary"
+          href="https://drive.google.com/open?id=1pXMiUmd4nnxwQ-SI6Pv4zFsE-JcOGCX-"
+          target="_blank"
+          variant="contained"
+        >Download Securemon</Button>
+      </div>
       <Typography className={classes.header} variant="h4">Free add-ons</Typography>
       <Typography className={classes.text}>In the future we will release additional card packs on this page that can be printed out and added to the game to improve it and keep it updated.
       </Typography>

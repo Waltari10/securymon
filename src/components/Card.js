@@ -2,7 +2,9 @@ import React, { useState } from 'react';
 import ReactCardFlip from 'react-card-flip';
 import { makeStyles } from '@material-ui/core/styles';
 
-import cardFrontImg from '../assets/Card1.png';
+import cardFrontImg from '../assets/card.png';
+import rightCardImg from '../assets/right_card.png';
+import wrongCardImg from '../assets/wrong_card.png';
 import cardBackImg from '../assets/Answer1.png';
 
 
@@ -35,6 +37,7 @@ const useStyles = makeStyles(() => ({
 const Card = ({ className }) => {
 
   const [isFlipped, setFlipped] = useState(false);
+  const [isRight, setIsRight] = useState(false);
   const classes = useStyles();
 
   return (
@@ -50,14 +53,43 @@ const Card = ({ className }) => {
       >
         <div
           className={classes.cardFront}
-          onClick={() => setFlipped(!isFlipped)}
         >
+          <div
+            onClick={() => {
+              setTimeout(() => {
+                setFlipped(!isFlipped);
+              }, 10);
+              setIsRight(false);
+            }}
+            style={{
+              left: 0,
+              right: 0,
+              top: '62%',
+              bottom: '20.5%',
+              position: 'absolute',
+            }}
+          ></div>
+          <div
+            onClick={() => {
+              setTimeout(() => {
+                setFlipped(!isFlipped);
+              }, 10);
+              setIsRight(true);
+            }}
+            style={{
+              left: 0,
+              right: 0,
+              top: '81%',
+              bottom: '1.5%',
+              position: 'absolute',
+            }}
+          >
+
+          </div>
           <img
             className={classes.cardInner}
             src={cardFrontImg}
-
-          >
-          </img>
+          />
         </div>
         <div
           className={classes.cardBack}
@@ -65,8 +97,7 @@ const Card = ({ className }) => {
         >
           <img
             className={classes.cardInner}
-            src={cardBackImg}
-
+            src={isRight ? rightCardImg : wrongCardImg}
           >
           </img>
         </div>

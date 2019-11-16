@@ -6,11 +6,11 @@ const useStyles = makeStyles((theme) => ({
 
   container: {
     marginTop: theme.spacing(14),
-    backgroundColor: '#FC8770',
-    height: '200px',
+    height: '150px',
   },
   copyright: {
-    lineHeight: '200px',
+    opacity: 0.26,
+    lineHeight: '150px',
   },
 
 }));
@@ -22,10 +22,14 @@ const Footer = () => {
   return (
     <div className={classes.container}>
       <Typography
+        variant="caption"
         className={classes.copyright}
         align="center"
       >
-        Copyright © Team Arnold
+        <div>
+          Copyright © Team Arnold Junction 2019
+        </div>
+
       </Typography>
     </div>
   );

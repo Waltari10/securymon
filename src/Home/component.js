@@ -35,17 +35,17 @@ const Home = () => {
       <Typography
         className={classes.header}
         align="center"
-        variant="h4"
+        variant="h2"
       >
-        Securymon is an educational and fun board game for families and children
+        Cyber security has never been so fun
       </Typography>
 
       <Typography
         className={classes.subheader}
         align="center"
-        variant="h6"
+        variant="h5"
+        dangerouslySetInnerHTML={{ __html: 'Securymon is designed to teach the basics of internet security awareness. <br> Start playing and learning today!'}}
       >
-        It’s designed to teach the basics of internet security awareness. Start playing and learning today!
       </Typography>
       <Card
         className={classes.card}

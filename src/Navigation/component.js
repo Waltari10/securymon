@@ -18,18 +18,20 @@ const useStyles = makeStyles(theme => ({
   },
   tab: {
     textDecoration: 'none',
-    fontSize: '1rem',
+    textTransform: 'none',
+    fontSize: '0.875rem',
     opacity: 1,
-    color: 'rgba(0,0,0,0.7)',
+    color: 'rgba(0,0,0,0.5  )',
   },
   indicator: {
     backgroundColor: 'transparent',
   },
   activeTab: {
-    fontSize: '1rem',
+    fontSize: '0.875rem',
     opacity: 1,
     color: 'rgba(0,0,0,1)',
-    textDecoration: 'underline',
+    textDecoration: 'none',
+    textTransform: 'none',
   },
   contentContainer: {
     maxWidth: '800px',
@@ -44,29 +46,29 @@ const useStyles = makeStyles(theme => ({
   tabs: {
     justifyContent: 'flex-end',
   },
+  logoContainer: {
+    zIndex: 1,
+  },
 }));
 
 const getActiveIndex = () => {
-
-
   if (window.location.hash.indexOf('play') !== -1) {
     return 1;
   } else if (window.location.hash.indexOf('databank') !== -1) {
     return 2;
   }
-
   return 0;
-
 };
 
 export default function SimpleTabs() {
   const classes = useStyles();
   const [value, setValue] = React.useState(getActiveIndex());
 
+  console.log(value);
   const handleChange = (event, newValue) => {
+    console.log(newValue);
     setValue(newValue);
   };
-
   return (
     <div className={classes.root}>
       <AppBar
@@ -76,7 +78,16 @@ export default function SimpleTabs() {
         }}
         position="static"
       >
-        <img src={logo} className={classes.logo} />
+        <Link
+          className={classes.logoContainer}
+          onClick={() => handleChange(null, 0)}
+          to="/"
+        >
+          <img
+            src={logo}
+            className={classes.logo}
+          />
+        </Link>
         <Tabs
           classes={{
             flexContainer: classes.tabs,
@@ -87,21 +98,9 @@ export default function SimpleTabs() {
             backgroundColor: 'transparent',
           }}
           value={value}
-
           onChange={handleChange}
-
         >
-          <Link
-            className={classes.tab}
-            onClick={() => handleChange(null, 0)}
-            to="/"
-          >
-            <Tab
-              className={getActiveIndex() === 0 ? classes.activeTab : classes.tab}
-              label="Home"
-            >
-            </Tab>
-          </Link>
+
           <Link
             className={classes.tab}
             onClick={() => handleChange(null, 1)}
@@ -114,12 +113,12 @@ export default function SimpleTabs() {
             </Tab>
           </Link>
           <Link
-            className={getActiveIndex() === 2 ? classes.activeTab : classes.tab}
+            className={classes.tab}
             onClick={() => handleChange(null, 2)}
             to="/databank"
           >
             <Tab
-              className={classes.tab}
+              className={getActiveIndex() === 2 ? classes.activeTab : classes.tab}
               label="Databank"
             >
             </Tab>
