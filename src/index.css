@@ -1,0 +1,12 @@
+
+
+@font-face { font-family: Morl; src: url('font/Morl-Regular.otf'); } 
+@font-face { font-family: Morl; font-weight: bold; src: url('font/Morl-Bold.otf'); }
+
+body {
+  margin: 0;
+  font-family: "Morl";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #E7E5FE;
+}
