@@ -11,14 +11,15 @@ const useStyles = makeStyles((theme) => {
       marginBottom: theme.spacing(8),
       maxWidth: '500px',
       width: '50%',
-      marginTop: theme.spacing(12),
+      marginTop: '60px',
       margin: '0 auto',
     },
     header: {
-      marginTop: '25%',
+      fontSize: '6rem',
+      marginTop: '23%',
     },
     subheader: {
-      marginTop: theme.spacing(3),
+      marginTop: '60px',
     },
   });
 });

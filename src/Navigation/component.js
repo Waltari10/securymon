@@ -34,7 +34,7 @@ const useStyles = makeStyles(theme => ({
     textTransform: 'none',
   },
   contentContainer: {
-    maxWidth: '800px',
+    maxWidth: '1000px',
     margin: '0 auto',
   },
   logo: {
